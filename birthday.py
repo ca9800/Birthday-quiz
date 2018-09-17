@@ -31,3 +31,68 @@ Example Session
   And the day? 11
   Eric, you are a fall baby of the stone age.
 """
+
+from datetime import datetime
+from calendar import month_name
+
+
+todaymonth = datetime.today().month
+todaydate = datetime.today().day
+
+name = input("Hello, what is your name? ")
+month = input("Hi " + name + " what was the name of the month you were born in? ")
+year = int(input("And what year were you born in, " + name + "? "))
+day = int(input("And the day? "))
+
+#specific days
+if month == "october" and day == "31":
+    print ("You were born on Halloween!")
+
+if month == month_name[todaymonth] and day == todaydate:
+    print ("Happy birthday!")
+
+
+
+
+#seasons and years
+else:
+    
+    if month in ["december", "january", "febuary"]:
+        print ( name + ", you are a winter baby", end = "")
+    
+    if month in ["march", "april", "may"]:
+        print ( name + ", you are a spring baby", end = "")
+
+    if month in ["june", "july", "august"]:
+        print ( name + ", you are a summer baby", end = "")
+    
+    if month in ["september", "october", "november"]:
+        print ( name + ", you are a fall baby", end = "")
+   
+    if year < 1980:
+        print (" of the stone age")
+        
+    if year >= 1980 and year <= 1989:
+        print (" of the eighties")
+    
+    if year >= 1990 and year <= 1999:
+        print (" of the eighties")
+    
+    if year >= 2000:
+        print (" of the two thousands")
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    

@@ -50,7 +50,7 @@ day = int(input("And the day? "))
 if month == "October" and day == 31:
     print ("You were born on Halloween!")
 
-if month == month_name[todaymonth] and day == todaydate:
+elif month == month_name[todaymonth] and day == todaydate:
     print ("Happy birthday!")
 
 #seasons and years

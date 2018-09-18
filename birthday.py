@@ -69,16 +69,16 @@ else:
         print ( name + ", you are a fall baby", end = "")
    
     if year < 1980:
-        print (" of the Stone Age")
+        print (" of the Stone Age.")
         
     if year >= 1980 and year <= 1989:
-        print (" of the eighties")
+        print (" of the eighties.")
     
     if year >= 1990 and year <= 1999:
-        print (" of the eighties")
+        print (" of the eighties.")
     
     if year >= 2000:
-        print (" of the two thousands")
+        print (" of the two thousands.")
 
 
 

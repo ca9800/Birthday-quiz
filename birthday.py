@@ -46,26 +46,26 @@ day = int(input("And the day? "))
 
 
 #specific days
-if month == "october" and day == "31":
+
+if month == "October" and day == 31:
     print ("You were born on Halloween!")
 
 if month == month_name[todaymonth] and day == todaydate:
     print ("Happy birthday!")
 
-
 #seasons and years
 else:
     
-    if month in ["december", "january", "febuary"]:
+    if month in ["December", "January", "Febuary"]:
         print ( name + ", you are a winter baby", end = "")
     
-    if month in ["march", "april", "may"]:
+    if month in ["March", "April", "May"]:
         print ( name + ", you are a spring baby", end = "")
 
-    if month in ["june", "july", "august"]:
+    if month in ["June", "July", "August"]:
         print ( name + ", you are a summer baby", end = "")
     
-    if month in ["september", "october", "november"]:
+    if month in ["September", "October", "November"]:
         print ( name + ", you are a fall baby", end = "")
    
     if year < 1980:
